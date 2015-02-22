@@ -7,10 +7,10 @@
 int main()
 {
 
-	int pw[35];
+	int pw[36];
 
 
-	int j, x; 
+	int j=0, x=0; 
 
 	for (j = 97; j <= 122; j++)
 	{
@@ -18,7 +18,7 @@ int main()
 		x++;
 	}
 
-	for (j = 48; j<= 57; j++)
+	for (j = 48; j<= 58; j++)
 	{
 		pw[x] = j; 
 		x++;
@@ -41,13 +41,16 @@ int main()
 	int count, i;
 
 	srand ( time(NULL) );
-	for( count = 0; count < pwlen  ;  count++){ 
+	for( count = 0; count <= pwlen  ;  count++){ 
 
 		i = rand() % 36;
 		printf("%c",pw[i]); 
 	}
-	printf("\n\n");
-
+	printf("\n");
+	for(i=0; i<=36; i++)
+	{
+		printf("%c ",pw[i]);
+	}
 	return 0;
 
 }
