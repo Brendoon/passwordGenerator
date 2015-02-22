@@ -6,8 +6,9 @@
 //Obrigado
 int main()
 {
-/*
+
 	int pw[35];
+	
 
 	int j, x; 
 
@@ -22,14 +23,18 @@ int main()
 		pw[x] == j; 
 		x++;
 	}
-*/
-	int pwlen=0;
+
+int pwlen = 0, int  upper = 2; //seting non-uppercase as default
 
 
 	printf("Enter Password length: ");
 	scanf("%d", &pwlen);
+	char password[pwlen];
 
-	// printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n "); To be implemented
+
+	 printf("Deseja usar letras maiusculas:\n1-Sim\n2-Não\n\n "); 
+	 scanf("%d", &upper); 
+
 	// printf("Your password is: ");
 
 
@@ -37,18 +42,20 @@ int main()
 	srand ( time(NULL) );
 	do
 	{
-		count++;
-		do
-		{
-			i = rand() % 122;
-		}
-		while(i<48 || i>57 && i<97);
-		printf("%c",i);
-		i++;
+	
+//		do
+//		{
+			i = rand() % 36;
+			password[count] = pw[i];
+			count++;
+//		}
+	//	while(i<48 || i>57 && i<97);
+	//	printf("%c",i);
+	//	i++; 
 
-	}
+//	}
 	while(count<pwlen);
-	printf("\n");
+	printf("%s",password );
 	return 0;
 
 }
