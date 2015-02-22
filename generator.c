@@ -53,7 +53,7 @@ int pwlen = 0,   upper = 2; //seting non-uppercase as default
 	//	printf("%c",i);
 	//	i++; 
 
-//	}
+	}
 	while(count<pwlen);
 	printf("%s",password );
 	return 0;
