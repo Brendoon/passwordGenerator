@@ -24,7 +24,7 @@ int main()
 		x++;
 	}
 
-int pwlen = 0, int  upper = 2; //seting non-uppercase as default
+int pwlen = 0,   upper = 2; //seting non-uppercase as default
 
 
 	printf("Enter Password length: ");
